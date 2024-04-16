@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Tester</title>
+    <style>
+        body {
+            font-family: "Arial",sans-serif;
+            background-color: #0a0a0a;
+            margin: 0;
+            padding: 0;
+            box-sizing:  border-box;
+        }
+        .container {
+            width: 80;
+            margin: auto;
+            padding: 20px;
+            background-color: #080808;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            margin-top: 50px;
+        }
+        h1 {
+            color: #007bff
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+            color: #f8f5f5;
+        }
+
+        input[type='text'] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #0f0f0f;
+            border-radius: 4px;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fdfafa;
+            padding:10px 20px;
+            border:none;
+            border-radius: 40px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Regex Tester</h1>
+        <form method="Post">
+            <label for="test_string">Test String:</label>
+            <input type="text" id="test_string" name="test_string">
+            <label for="regex_pattern">Regex Pattern:</label>
+            <input type="text" id="regex_pattern" name ="regex_pattern">
+            <input type="submit" value ="submit">
+        </form>
+
+        <h1> Mail Id Validator </h1>
+        <form action="/validator" method="POST">
+            <label for="Pattern">Enter The Mail ID:</label>
+            <input type="text" id="mail" name="mail" placeholder="For example validmail@gmail.com">
+            <button type=""submit" style ="padding: 10 px 2px; background-color:#007bff;color:#fff; border-radius: 4px;">Validate</button>
+        </form>
+    </div>
+</body>
+</html>
